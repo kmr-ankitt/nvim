@@ -152,6 +152,18 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- Always use spaces instead of tabs
+vim.opt.expandtab = true
+
+-- Number of spaces a <Tab> counts for
+vim.opt.tabstop = 2
+
+-- Number of spaces for each step of (auto)indent
+vim.opt.shiftwidth = 2
+
+-- Control how many spaces <Tab> inserts in insert mode
+vim.opt.softtabstop = 2
+
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
